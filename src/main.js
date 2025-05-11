@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth'
 
 import App from './App.vue'
 import router from './router'
@@ -25,3 +26,7 @@ app.use(pinia)
 app.use(router)
 
 app.mount('#app')
+
+const auth = getAuth(app)
+
+export { auth, sendPasswordResetEmail }

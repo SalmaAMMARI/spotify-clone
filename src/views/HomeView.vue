@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+
 import { RouterLink } from 'vue-router'
 import HomeCard from '../components/HomeCard.vue'
 import MenuItem from '../components/MenuItem.vue'
@@ -157,7 +158,7 @@ const popularPlaylists = [
         <ul class="text-gray-200 text-sm">
           <li class="px-4 py-2.5 hover:bg-[#3E3D3D] border-b border-[#3E3D3D]">Account</li>
           <li class="px-4 py-2.5 hover:bg-[#3E3D3D] border-b border-[#3E3D3D]">Profile</li>
-          <li class="px-4 py-2.5 hover:bg-[#3E3D3D]">Log out</li>
+          <li class="px-4 py-2.5 hover:bg-[#3E3D3D]" onclick="logout"><router-link to='/'>Log out</router-link></li>
         </ul>
       </div>
     </div>
