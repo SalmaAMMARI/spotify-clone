@@ -65,12 +65,12 @@
         
         <button type="submit" class="login-button">Log In</button>
         
-        <router-link to="/forgot" class="forgot-password">
+        <router-link to="/forgot-password" class="forgot-password">
           Forgot your password?
         </router-link>
         
         <div class="signup-link">
-          Don't have an account? <router-link to="/">Sign up for Spotify</router-link>.
+          Don't have an account? <router-link to="/signup">Sign up for Spotify</router-link>.
         </div>
       </form>
     </div>
